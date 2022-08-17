@@ -24,10 +24,10 @@ const Fomulario = () => {
    
     console.log("el componente fue actualizado");
     localStorage.setItem("listaTareas",JSON.stringify(tareas));
-  },[tarea,tareas])
+  },[tarea,tareas]);
 
   //creo function en forma de flecha
-  const handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
     console.log("msj de prueba");
     let arreglo = tareas;
@@ -36,7 +36,7 @@ const Fomulario = () => {
     console.log(tareas);
     setTarea("");
 
-  }; 
+  } 
   const borrarTarea = (nombre) =>{
     let arregloModificado = tareas.filter((unaTarea)=> unaTarea !== nombre);
     setTareas(arregloModificado);

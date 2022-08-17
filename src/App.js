@@ -14,7 +14,7 @@ function App() {
       <Subtitulo
         comision={comision}
         frase="Fea la actitud"
-        anio={2020}
+        anio={2022}
       ></Subtitulo>
       <Formulario></Formulario>
     </div>
